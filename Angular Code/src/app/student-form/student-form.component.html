@@ -1,0 +1,36 @@
+<div class="container-fluid">
+  <div class="text-center">
+  <h1 id ="title">Student Admission Form</h1>
+    <p id="description"><strong>Please fill in the below details-</strong></p>
+    <div class="jumbotron form-div">
+  <form id="survey-form" [formGroup]="form">
+    
+    <div class="field">
+    <label id="name-label" for="name" class="field-label">NAME</label>
+      <input type="text" id="name" required="true" placeholder="Enter your Name" maxlength="20" formControlName="name">
+    </div>
+        <div class="field">
+    <label id="ln-label" for="lastName" class="field-label">LAST NAME</label>
+      <input type="text" id="lastName" required="true" placeholder="Enter your last Name" maxlength="20" formControlName="lastName">
+    </div>
+
+    <div class="field">
+        <label id="class-label" for="class" class="field-label">CLASS</label>
+        <input type="text" id="class" required="true" placeholder="Enter your class" formControlName="class">
+    </div>
+
+    <div class="field">
+    <label id="year-label" for="year" class="field-label">YEAR OF PASSING</label>
+      <input type="number" id="number" required="true" placeholder="Enter passing year(2000-2017)" min="2000" max="2017" maxlength="4" minlength="4" formControlName="passingYear">
+    </div>
+    
+    <div class="field">
+    <label id="percentageLabel" for="percentage" class="field-label">PERCENTAGE OF MARKS</label> 
+      <input type="number" required="true"  name="percentage" id="percentage" placeholder="Enter your percentage %" formControlName="percentage">
+    </div>
+    <br  />
+    <button type="submit" class="btn btn-primary btn-lg btn-active" [disabled]="form.invalid">Submit</button>
+  </form>
+    </div>
+  </div>
+</div>

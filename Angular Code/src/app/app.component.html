@@ -1,0 +1,10 @@
+<ng-container [ngSwitch]="global.step">
+  <nav class="navbar navbar-light bg-light">
+      <div class="form-inline mx-auto">
+          <button class="btn btn-outline-primary" type="button" (click)="global.step=0" style="margin-right: 15px">Student Table</button>
+          <button class="btn btn-outline-primary" type="button" (click)="global.step=1">Admission Form</button>
+      </div>
+  </nav><br />
+  <app-student-table *ngSwitchCase="0"></app-student-table>
+  <app-student-form *ngSwitchCase="1"></app-student-form>
+</ng-container>

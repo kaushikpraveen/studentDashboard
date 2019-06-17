@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    color:#000;
+    background:#00526664;
+  }
+  table{
+    font-weight: 500;
+  }
+  thead{
+    font-style: italic;
+  }
+  form{
+    display:block;
+  }
+  .field{
+    display:block;
+  }
+  .field-label{
+    text-align:left;
+    width:30%;
+  }
+  input, select{
+    width:50%
+  }
+  .form-div{
+    color:black;
+    width:70%;
+    display:inline-block;
+  }
+  .cb-field{
+    display:block;
+    width:auto;
+  }
